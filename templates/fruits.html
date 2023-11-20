@@ -1,0 +1,154 @@
+{% extends 'base.html' %}
+{% set active_page = "fruits.html" %}
+
+{% block title %} Home {% endblock %}
+
+{% block main %}
+    <div class="container py-5">
+        <div class="row mb-4 mb-lg-5">
+            <div class="col-md-9 col-xl-6 text-center mx-auto">
+                <p class="fw-bold text-success mb-2">Our Services</p>
+                <h3 class="fw-bold">List of fruits and information about them</h3>
+            </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 mx-auto" style="max-width: 900px;">
+            <div class="col mb-5" style="display: flex;">
+                <img class="rounded img-fluid shadow" src="/static/img/Fruits/Dragon%20Fruit_AI.jpeg"
+                     style="width: 400px;height: 400px;margin: auto;">
+            </div>
+            <div class="col d-flex mb-5 flex-column justify-content-center align-content-center">
+                <h5 class="fw-bold text-center">Dragon fruits</h5>
+                <p class="text-muted mb-4 text-center">Dragon fruit has a unique and striking appearance, with a bright pink or
+                    yellow outer skin covered in green-tipped scales. The flesh inside can be white or deep magenta,
+                    dotted with tiny black seeds, giving it a starry look.</p>
+                <a class="btn btn-primary shadow align-self-center" href="{{ url_for('dragon_fruits_page') }}">Learn more</a>
+            </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 mx-auto" style="max-width: 900px;display: flex;">
+            <div class="col order-md-last mb-5" style="display: flex;">
+                <img class="rounded img-fluid shadow" src="/static/img/Fruits/Rambutan_AI.jpeg"
+                     style="width: 400px;height: 400px;margin: auto;">
+            </div>
+            <div class="col d-flex mb-5 flex-column justify-content-center align-content-center">
+                <h5 class="fw-bold text-center">Rambutan</h5>
+                <p class="text-muted mb-4 text-center">Rambutan is a small, round fruit covered in a thick, leathery skin that
+                    is bright red or yellow when ripe. The skin is covered in soft, hair-like structures, making it
+                    look somewhat hairy. The flesh inside is translucent white, juicy, and clings to a central
+                    seed.</p>
+                <a class="btn btn-primary shadow align-self-center" href="{{ url_for("rambutan_page") }}">Learn more</a>
+            </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 mx-auto" style="max-width: 900px;">
+            <div class="col mb-5" style="display: flex;">
+                <img class="rounded img-fluid shadow" src="/static/img/Fruits/Mangosteen_AI.jpeg"
+                     style="width: 400px;height: 400px;margin: auto;">
+            </div>
+            <div class="col d-flex mb-5 flex-column justify-content-center align-content-center">
+                <h5 class="fw-bold text-center">Mangosteen</h5>
+                <p class="text-muted mb-4 text-center">The mangosteen has a thick, hard purple rind when ripe. Inside, the fruit
+                    is divided into white segments, similar in appearance to garlic cloves but larger and softer.
+                    The flesh is juicy and tender.</p>
+                <a class="btn btn-primary shadow align-self-center" href="{{ url_for("mangosteen_page") }}">Learn more</a>
+            </div>
+        </div>
+    </div>
+    <div class="container py-5 pt-sm-5 mt-sm-0" style="margin-top: -66px;">
+        <div class="row row-cols-1 row-cols-md-2 mx-auto" style="max-width: 900px;">
+            <div class="col order-md-last mb-5" style="display: flex;">
+                <img class="rounded img-fluid shadow mt-md-0 pt-md-0" src="/static/img/Fruits/Longan_AI.jpeg"
+                     style="width: 400px;height: 400px;margin: auto;">
+            </div>
+            <div class="col d-flex mb-5 flex-column justify-content-center align-content-center">
+                <h5 class="fw-bold text-center">Longan</h5>
+                <p class="text-muted mb-4 text-center">Longans are small, round fruits with a thin, light brown skin that turns
+                    slightly brittle when ripe. The flesh inside is translucent, with a glossy sheen, surrounding a
+                    large, shiny black seed, giving it the appearance of an eyeball.</p>
+                <a class="btn btn-primary shadow align-self-center" href="{{ url_for("longan_page") }}">Learn more</a>
+            </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 mx-auto" style="max-width: 900px;">
+            <div class="col mb-5" style="display: flex;">
+                <img class="rounded img-fluid shadow" src="/static/img/Fruits/Lychee_AI.jpeg"
+                     style="width: 400px;height: 350px;margin: auto;">
+            </div>
+            <div class="col d-flex mb-5 flex-column justify-content-center align-content-center">
+                <h5 class="fw-bold text-center">Lychee</h5>
+                <p class="text-muted mb-4 text-center">Lychees have a rough, reddish-pink skin that is easy to peel. The flesh
+                    inside is white, translucent, and juicy, encasing a single large, brown seed.</p>
+                <a class="btn btn-primary shadow align-self-center" href="{{ url_for("lychee_page") }}">Learn more</a>
+            </div>
+        </div>
+    </div>
+    <div class="container py-5" style="padding-top: 47px;margin-top: -55px;">
+        <div class="row row-cols-1 row-cols-md-2 mx-auto" style="max-width: 900px;">
+            <div class="col order-md-last mb-5" style="display: flex;">
+                <img class="rounded img-fluid shadow" src="/static/img/Fruits/Durian_AI.jpeg"
+                     style="width: 400px;height: 400px;margin: auto;">
+            </div>
+            <div class="col d-flex mb-5 flex-column justify-content-center align-content-center">
+                <h5 class="fw-bold text-center">Durian</h5>
+                <p class="text-muted mb-4 text-center">Durian is a large, spiky fruit, with a hard outer shell covered in large,
+                    thorn-like spikes. The flesh inside is soft, creamy, and ranges in color from pale yellow to
+                    red, depending on the variety.
+                </p>
+                <a class="btn btn-primary shadow align-self-center" href="{{ url_for("durian_page") }}">Learn more</a>
+            </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 mx-auto" style="max-width: 900px;">
+            <div class="col mb-5" style="display: flex;">
+                <img class="rounded img-fluid shadow" src="/static/img/Fruits/Pomelo_AI.jpeg"
+                     style="width: 400px;height: 400px;margin: auto;">
+            </div>
+            <div class="col d-flex mb-5 flex-column justify-content-center align-content-center">
+                <h5 class="fw-bold text-center">Pomelo</h5>
+                <p class="text-muted mb-4 text-center">Pomelo is the largest citrus fruit, with a thick, spongy rind that can be
+                    green or yellow. The flesh inside is segmented like other citrus fruits and can be pale yellow,
+                    pink, or red, with a texture that is firmer than grapefruit.</p>
+                <a class="btn btn-primary shadow align-self-center" href="{{ url_for("pomelo_page") }}">Learn more</a>
+            </div>
+        </div>
+    </div>
+    <div class="container py-5" style="margin-top: -65px;">
+        <div class="row row-cols-1 row-cols-md-2 mx-auto" style="max-width: 900px;">
+            <div class="col order-md-last mb-5" style="display: flex;">
+                <img class="rounded img-fluid shadow" src="/static/img/Fruits/Sapodilla_AI.jpeg"
+                     style="width: 400px;height: 400px;margin: auto;">
+            </div>
+            <div class="col d-flex mb-5 flex-column justify-content-center align-content-center">
+                <h5 class="fw-bold text-center">Sapodilla</h5>
+                <p class="text-muted mb-4 text-center">Sapodilla is a small, egg-shaped fruit with a rough, brown, sandy skin.
+                    The flesh inside is soft, grainy, and ranges from pale yellow to brown, with a sweet taste and a
+                    texture similar to a ripe pear.</p>
+                <a class="btn btn-primary shadow align-self-center" href="{{ url_for("sapodilla_page") }}">Learn more</a>
+            </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 mx-auto" style="max-width: 900px;">
+            <div class="col mb-5" style="display: flex;">
+                <img class="rounded img-fluid shadow" src="/static/img/Fruits/Star%20Apple_AI.jpg"
+                     style="width: 400px;height: 400px;margin: auto;">
+            </div>
+            <div class="col d-flex mb-5 flex-column justify-content-center align-content-center">
+                <h5 class="fw-bold text-center">Star Apple</h5>
+                <p class="text-muted mb-4 text-center">Star apple is a round fruit with a smooth skin that can be purple or
+                    green. The flesh inside is jelly-like, typically purple or white, and when cut in half, it
+                    displays a star pattern formed by the seeds.
+                </p>
+                <a class="btn btn-primary shadow align-self-center" href="{{ url_for("starapple_page") }}">Learn more</a>
+            </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 mx-auto" style="max-width: 900px;">
+            <div class="col order-md-last mb-5" style="display: flex;">
+                <img class="rounded img-fluid shadow" src="/static/img/Fruits/Passion%20Fruit_AI.jpeg"
+                     style="width: 400px;height: 400px;margin: auto;">
+            </div>
+            <div class="col d-flex mb-5 flex-column justify-content-center align-content-center">
+                <h5 class="fw-bold text-center">Passion Fruit</h5>
+                <p class="text-muted mb-4 text-center">Passion fruit has a round or oval shape with a tough outer rind that is
+                    purple or yellow when ripe. The interior is filled with a juicy, orange pulp that is full of
+                    small, edible black seeds.</p>
+                <a class="btn btn-primary shadow align-self-center" href="{{ url_for("passion_page") }}">Learn more</a>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-primary-gradient"></footer>
+{% endblock %}

@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+{% block title %} FruitGPT {% endblock %}
+
+{% block heading %}
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="/static/css/chatbot.css">
+{% endblock %}
+
+
+{% block main %}
+    <div class="container-fluid h-100 mt-3">
+        <div class="row justify-content-center h-100">
+            <div class="col-md-8 col-xl-6 chat">
+                <div class="card" style="height: 500px; border-radius: 15px; background-color: #fff; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                    <div class="card-header msg_head" style="border-radius: 15px 15px 0 0; background-color: #f8f9fa;">
+                        <div class="d-flex bd-highlight">
+                            <div class="img_cont" style="position: relative;">
+                                <img src="https://i.ibb.co/fSNP7Rz/icons8-chatgpt-512.png"
+                                     class="rounded-circle user_img" style="width: 50px; height: 50px; border:1.5px solid #f5f6fa;">
+                                <span class="online_icon" style="position: absolute; height: 15px; width:15px; background-color: #4cd137; border-radius: 50%; bottom: 0.2em; right: 0.4em; border:1.5px solid white;"></span>
+                            </div>
+                            <div class="user_info" style="margin-top: auto; margin-bottom: auto; margin-left: 15px;">
+                                <span style="font-size: 20px; color: #333;">FruitGPT</span>
+                                <p style="font-size: 10px; color: #666;">Ask me anything!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body msg_card_body" id="messageFormeight" style="overflow-y: auto;">
+
+                        <!-- Messages will be here -->
+
+                    </div>
+                    <div class="card-footer" style="border-radius: 0 0 15px 15px; background-color: #f8f9fa;">
+                        <form id="messageArea" class="input-group">
+                            <input type="text" id="text" name="msg" placeholder="Type your message..."
+                                   autocomplete="off" class="form-control type_msg" required
+                                   style="background-color: #f8f9fa; color: #333; border:0; box-shadow:none; padding: 10px 0px 10px 0px"/>
+                            <div class="input-group-append h-100" style="padding: 10px 0px 10px 0px">
+                                <button type="submit" id="send" class="input-group-text send_btn"
+                                        style="background-color: #007bff; color: #fff; border-radius: 0 15px 15px 0; border:0; cursor: pointer;">
+                                    <i class="fas fa-location-arrow"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
