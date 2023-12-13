@@ -6,7 +6,7 @@ app = Flask(__name__, static_folder="static")
 
 # Init client
 client = OpenAI(
-    api_key="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")
+    api_key="your_api_key_here")
 
 # Create new assistant or load existing
 assistant_id = create_assistant(client)
